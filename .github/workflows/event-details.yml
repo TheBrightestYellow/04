@@ -1,4 +1,4 @@
-name: 'Issue Opened/Edited'
+name: Issue Opened/Edited
 on:
   issues:
     types: [opened, edited]
@@ -6,5 +6,5 @@ jobs:
   show-details:
     runs-on: ubuntu-latest
     steps:
-      - name: 'Details'
-        run: echo '${{ toJSON(github.event.issue) }}'
+      - name: Details
+        run: echo "${{ toJSON(github.event) }}""
